@@ -18,5 +18,6 @@ with open("example_data.csv") as f: #like English: with "file.txt" as "name I gi
 
 #best
     for line in f:
-        row=line.split(",")
-        print(row[col])
+        print(line)
+        #row=line.split(",")
+        #print(row[col])
