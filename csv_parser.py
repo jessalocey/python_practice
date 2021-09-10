@@ -11,12 +11,12 @@ print(args)
 if args.verbose:
     print("Printing CSV file, only column(s): ", args.column)
 
-with open("example_data.csv") as f:
+with open(args.csv_file) as f:
     for line in f:
         if args.column:
-            row=line.split(",")
+            row = line.split(",")
             for i in range(len(args.column)):
-                print(row[args.column[i]], end=",")
+                print(row[args.column[i]], end=" ")
             print("\n", end="")
         else:
             print(line)
